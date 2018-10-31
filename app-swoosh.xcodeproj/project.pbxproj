@@ -12,6 +12,7 @@
 		42AD79662189255000169627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AD79642189255000169627 /* Main.storyboard */; };
 		42AD79682189255200169627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AD79672189255200169627 /* Assets.xcassets */; };
 		42AD796B2189255200169627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AD79692189255200169627 /* LaunchScreen.storyboard */; };
+		42AD79742189397700169627 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD79732189397700169627 /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		42AD79672189255200169627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42AD796A2189255200169627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42AD796C2189255200169627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AD79732189397700169627 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		42AD795F2189255000169627 /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				42AD79722189393700169627 /* Views */,
 				42AD79602189255000169627 /* AppDelegate.swift */,
 				42AD79622189255000169627 /* ViewController.swift */,
 				42AD79642189255000169627 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				42AD796C2189255200169627 /* Info.plist */,
 			);
 			path = "app-swoosh";
+			sourceTree = "<group>";
+		};
+		42AD79722189393700169627 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42AD79732189397700169627 /* BorderedButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				42AD79632189255000169627 /* ViewController.swift in Sources */,
 				42AD79612189255000169627 /* AppDelegate.swift in Sources */,
+				42AD79742189397700169627 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
