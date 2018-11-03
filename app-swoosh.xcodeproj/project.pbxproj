@@ -59,7 +59,6 @@
 				42AD79722189393700169627 /* Views */,
 				42AD79602189255000169627 /* AppDelegate.swift */,
 				42AD79622189255000169627 /* ViewController.swift */,
-				42AD79642189255000169627 /* Main.storyboard */,
 				42AD79672189255200169627 /* Assets.xcassets */,
 				42AD79692189255200169627 /* LaunchScreen.storyboard */,
 				42AD796C2189255200169627 /* Info.plist */,
@@ -70,6 +69,7 @@
 		42AD79722189393700169627 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42AD79642189255000169627 /* Main.storyboard */,
 				42AD79732189397700169627 /* BorderedButton.swift */,
 			);
 			path = Views;
