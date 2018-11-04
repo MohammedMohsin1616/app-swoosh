@@ -16,6 +16,7 @@
 		42EEE5CF218E5D4B00C7AC1B /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE5CE218E5D4B00C7AC1B /* LeagueViewController.swift */; };
 		42EEE5D1218E5D5B00C7AC1B /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE5D0218E5D5B00C7AC1B /* SkillViewController.swift */; };
 		42EEE5D3218E6A3200C7AC1B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE5D2218E6A3200C7AC1B /* Player.swift */; };
+		42EEE5D6218E7C9700C7AC1B /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE5D5218E7C9700C7AC1B /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		42EEE5CE218E5D4B00C7AC1B /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		42EEE5D0218E5D5B00C7AC1B /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		42EEE5D2218E6A3200C7AC1B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		42EEE5D5218E7C9700C7AC1B /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		42AD795F2189255000169627 /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				42EEE5D4218E7C8500C7AC1B /* Helpers */,
 				42EEE5CD218E5BA100C7AC1B /* Controller */,
 				42EEE5CC218E5B9600C7AC1B /* Model */,
 				42AD79722189393700169627 /* View */,
@@ -98,6 +101,14 @@
 				42EEE5D0218E5D5B00C7AC1B /* SkillViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		42EEE5D4218E7C8500C7AC1B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				42EEE5D5218E7C9700C7AC1B /* UIButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				42AD79612189255000169627 /* AppDelegate.swift in Sources */,
 				42EEE5D1218E5D5B00C7AC1B /* SkillViewController.swift in Sources */,
 				42AD79742189397700169627 /* BorderedButton.swift in Sources */,
+				42EEE5D6218E7C9700C7AC1B /* UIButton.swift in Sources */,
 				42EEE5D3218E6A3200C7AC1B /* Player.swift in Sources */,
 				42EEE5CF218E5D4B00C7AC1B /* LeagueViewController.swift in Sources */,
 			);

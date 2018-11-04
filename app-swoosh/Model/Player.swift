@@ -10,7 +10,7 @@ import UIKit
 
 struct Player {
     
-    var desiredLeage: String?
-    var skillLevel: String?
+    var desiredLeage: String!
+    var skillLevel: String!
     
 }

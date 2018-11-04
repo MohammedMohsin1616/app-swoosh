@@ -252,6 +252,9 @@
                                         <state key="normal" title="Beginner">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBeginnerTapped:" destination="jfG-5o-yuu" eventType="touchUpInside" id="oI6-cB-63x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRw-or-1Rq" customClass="BorderedButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="130" y="0.0" width="100" height="50"/>
@@ -260,6 +263,9 @@
                                         <state key="normal" title="Baller">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBallerTapped:" destination="jfG-5o-yuu" eventType="touchUpInside" id="QJN-Dw-94a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -277,6 +283,10 @@
                                 <state key="normal" title="FINISH">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onFinishTapped:" destination="jfG-5o-yuu" eventType="touchUpInside" id="Dxm-M0-Yo6"/>
+                                    <segue destination="RdI-B5-mG3" kind="show" id="Wd9-hZ-25w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -300,10 +310,41 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9FP-Ul-cKZ"/>
                     </view>
+                    <connections>
+                        <outlet property="ballerButton" destination="VRw-or-1Rq" id="6Zz-RO-hUs"/>
+                        <outlet property="beginnerButton" destination="Eoj-ID-Qhv" id="XVb-md-2Sy"/>
+                        <outlet property="finishButton" destination="tdh-X8-fP6" id="y1k-wR-bpW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oye-yJ-Lu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2888.8000000000002" y="19.340329835082461"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="11e-ko-afA">
+            <objects>
+                <viewController id="RdI-B5-mG3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I89-zg-W60">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worklikeaboss" translatesAutoresizingMaskIntoConstraints="NO" id="qCE-T1-kPu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qCE-T1-kPu" firstAttribute="bottom" secondItem="I89-zg-W60" secondAttribute="bottom" id="D10-XT-moV"/>
+                            <constraint firstItem="qCE-T1-kPu" firstAttribute="leading" secondItem="nDO-bf-sxb" secondAttribute="leading" id="f28-bd-uoD"/>
+                            <constraint firstItem="qCE-T1-kPu" firstAttribute="top" secondItem="I89-zg-W60" secondAttribute="top" id="iff-pl-Ri6"/>
+                            <constraint firstItem="qCE-T1-kPu" firstAttribute="trailing" secondItem="nDO-bf-sxb" secondAttribute="trailing" id="nCf-wU-aoB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nDO-bf-sxb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIh-R2-34K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3718.125" y="28.52112676056338"/>
         </scene>
     </scenes>
     <resources>
@@ -312,5 +353,6 @@
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
         <image name="welcomeScreenBG" width="414" height="736"/>
+        <image name="worklikeaboss" width="1080" height="1920"/>
     </resources>
 </document>

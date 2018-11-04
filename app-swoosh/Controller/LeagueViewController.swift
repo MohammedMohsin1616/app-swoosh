@@ -11,7 +11,7 @@ import UIKit
 class LeagueViewController: UIViewController {
 
     var player: Player!
-    
+    var nonSelectedButtons: [BorderedButton] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,22 +31,22 @@ class LeagueViewController: UIViewController {
     @IBAction func onMensTapped(_ sender: Any) {
         selectedLeague(leagueType: "Mens")
         
-        let nonSelectedButtons = [WomensButton, CoedButton]
-        handleButtons(selectedButton: MensButton, nonSelectedButtons: nonSelectedButtons)
+       nonSelectedButtons = [WomensButton, CoedButton]
+       buttonHandler.handleButtons(selectedButton: MensButton, nonSelectedButtons: nonSelectedButtons)
     }
     
     @IBAction func onWomensTapped(_ sender: Any) {
         selectedLeague(leagueType: "Womens")
         
-        let nonSelectedButtons = [MensButton, CoedButton]
-        handleButtons(selectedButton: WomensButton, nonSelectedButtons: nonSelectedButtons)
+       nonSelectedButtons = [MensButton, CoedButton]
+       buttonHandler.handleButtons(selectedButton: WomensButton, nonSelectedButtons: nonSelectedButtons)
     }
     
     @IBAction func onCoedTapped(_ sender: Any) {
         selectedLeague(leagueType: "Co-ed")
         
-        let nonSelectedButtons = [WomensButton, MensButton]
-        handleButtons(selectedButton: CoedButton, nonSelectedButtons: nonSelectedButtons)
+        nonSelectedButtons = [WomensButton, MensButton]
+        buttonHandler.handleButtons(selectedButton: CoedButton, nonSelectedButtons: nonSelectedButtons)
     }
     
     //Outlets
@@ -61,18 +61,14 @@ class LeagueViewController: UIViewController {
         player.desiredLeage = leagueType
         nextButton.backgroundColor = UIColor(white: 0.0, alpha: 1.0)
         nextButton.isEnabled = true
+        
     }
     
-    func handleButtons(selectedButton:  UIButton, nonSelectedButtons: [BorderedButton?]) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        selectedButton.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-        selectedButton.setTitleColor(UIColor.black, for: .normal)
-        
-        for button in nonSelectedButtons {
-            button?.backgroundColor = UIColor.black
-            button?.setTitleColor(UIColor.white, for: .normal)
+        if let skillVC = segue.destination as? SkillViewController {
+            skillVC.player = player
         }
     }
-  
 
 }
