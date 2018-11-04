@@ -28,6 +28,8 @@ class LeagueViewController: UIViewController {
         
     }
     
+    
+    
     @IBAction func onMensTapped(_ sender: Any) {
         selectedLeague(leagueType: "Mens")
         
